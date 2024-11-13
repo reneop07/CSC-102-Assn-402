@@ -71,11 +71,23 @@ function string(event)
 
 
             }
+}
 
+function mememove(){
 
+console.log("begin moving")
 
+var Meme = document.getElementById ("memeimage")
+var pos=0
+var timer=setInterval(function(){
+    pos++
+    console.log(pos)
+    Meme.style.left=pos+"px"
+    if(pos>=600){
+pos=0
 
+    }
 
-            
+},25)
 
 }
